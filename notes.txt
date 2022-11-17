@@ -1,0 +1,98 @@
+Operators
+	binary - require 2 operands
+	unary - require 1 operand
+	ternary - require 3 operands
+
+	Arithmetic Operators
+		Addition
+		Subtraction
+		Multiplication
+		Division
+		Modulus: The % operator returns the remainder of a division formula; odd or even
+
+	Unary
+		Increment: ++ increments the value of an integer
+			Pre-increment operator
+				int x = 3;
+				int y = ++x;
+				// x is 4, y is 4
+			Postfix
+				x++; equicvalent to x=x+1
+				int x = 3;
+				int y = x++;
+				// x is 4, y is 3
+		Decrement: -- decrements the value of an integer
+			Pre-decrement
+				int b = 5;
+				Console.WriteLine(--b);
+				//Outputs 4
+			Post-decrement
+				int a = 4;
+				
+
+	Relational Operators
+		==: (equal to): checks whether it's equal to, if so returns true, otherwise false
+			5==5 will return true
+		!=:(not equal to): checks whether it's equal to, if not, true, otherwise false
+		>: Greater than
+		<: Less than
+		>=: Greater than or equal to
+		<=: Less than or equal to
+
+	Logical Operators
+		Used to combine two or more conditions or to complement the evaluation of the original 
+		&&: And operator returns true when both conditions satisfied, otherwise false
+		||: Or Operator returns true when one or both conditions satisfied
+		!: Not operator returns true if condition is not satisfied, otherwise false
+
+	Assignment Operator
+		Used to assign a value to a variable
+		=: simple assignment
+			a = 10;
+			b = 20;
+			ch = 'y';
+		+=: add assignment
+			a += b // same as a = a + b
+			int a = 5;
+			int b = 6;
+			Console.WriteLine(a); // outputs 11
+		-=: subtract assignment
+			a -= b // same as a = a - b
+			int a = 5;
+			int b = 6;
+			a -= b;
+			Console.WriteLine(a) // outputs -1
+		*=: multiply assignment
+		/=: division assignment
+		%=: modulus assignment 
+
+	Ternary Operator
+		aka inline-if: shorthand if-else statement, has 3 operands
+		condition ? trueScope : falseScope;
+			Condition must be true or false
+			if true, truescope is result
+			if false, falsescope is result
+		var i = 1;
+		var positiveMessage = (i > 0) ? "You are positive" : "You're not positive.";
+
+	Null Coalescing Operator
+		Allows to conditionally evaluate an expression and provides fallback value
+		var exampleValue = possiblyNullValue ?? SomeDefaultValue;
+		int? a = null;
+		int? x = a ?? 100;
+		Console.WriteLine(x); // outputs 100 because a is null, so double ?? will go with other value
+
+	Null Conditional Operator
+		var exampleList = new List<string>();
+		var exampleValue = exampleList?.Add("myString");
+		
+		
+
+
+			
+
+		                                      
+	
+
+
+	
